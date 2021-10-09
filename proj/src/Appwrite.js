@@ -10,7 +10,7 @@ export const api = {
     try {
       sdk.account.createOAuth2Session(
 				'google',
-				'http://localhost:3000/app',
+				'http://localhost:3000/',
 				'http://localhost:3000/login',
 				['profile']
 			)
