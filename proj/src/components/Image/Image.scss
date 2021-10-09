@@ -1,0 +1,17 @@
+.image {
+	border: 0.5em solid rgb(190, 190, 190);
+	border-radius: 0.5em;
+	box-shadow: 0 0.5em 1em -0.5em rgba(0, 0, 0, 0.562);
+	max-width: 100%;
+}
+
+.info-text {
+	font-size: 1.1em;
+	color: #7b8794;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.info-text:hover {
+	color: rgb(201, 204, 199);
+	transition: 200ms;
+}

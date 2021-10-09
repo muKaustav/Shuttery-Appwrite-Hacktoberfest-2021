@@ -1,0 +1,37 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 3em;
+	position: fixed;
+	bottom: 0;
+	width: 80vw;
+	margin-bottom: 1.5em;
+	border-radius: 50px;
+	background: rgba(235, 235, 235, 0.26);
+	backdrop-filter: saturate(180%) blur(10px);
+
+	.footer-text {
+		font-size: 1em;
+		color: rgb(37, 37, 37);
+		font-weight: bold;
+		font-family: 'Quicksand', sans-serif;
+	}
+
+	.github {
+		font-size: 1em;
+		color: #a1a1a1;
+	}
+
+	.github:visited {
+		color: #a1a1a1;
+	}
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+	.footer {
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+	}
+}
