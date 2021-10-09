@@ -1,0 +1,32 @@
+.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 16em auto;
+	width: 25em;
+	height: 25em;
+	border-radius: 50px;
+	background: #1f2933;
+	box-shadow: 20px 20px 60px #1a232b, -20px -20px 60px #242f3b;
+
+	.logotext {
+		color: #7b8794;
+		font-family: 'Lobster Two', cursive;
+		font-size: 4em;
+		margin-top: -0.8em;
+		font-weight: bold;
+	}
+
+	.google {
+		width: 3em;
+		height: 4em;
+		margin-top: 0.2em;
+		cursor: pointer;
+	}
+
+	.appwrite-link {
+		position: relative;
+		bottom: -3.5em;
+	}
+}

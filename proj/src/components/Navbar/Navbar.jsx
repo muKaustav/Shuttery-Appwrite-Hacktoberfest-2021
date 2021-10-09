@@ -5,7 +5,7 @@ function Navbar () {
   return (
     <div>
       <div className='Navbar'>
-        <a href='/app' className='logotext'>
+        <a href='/' className='logotext'>
 					Shuttery
 				</a>
       </div>

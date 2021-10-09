@@ -30,7 +30,7 @@ function App () {
     <div>
       <Navbar />
       <div className='Salutation'>
-				Hey {name}
+				Hey {name}, get the best pictures from Unsplash!
         <button onClick={logOut} className='Logout'>
           <span className='logout-icon'>
             <RiLogoutBoxLine />

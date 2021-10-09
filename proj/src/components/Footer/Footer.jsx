@@ -17,6 +17,21 @@ function Footer () {
 							kauC
 						</a>
           </span>
+          <span>
+            <a
+              href='https://appwrite.io/'
+              target='_blank'
+              className='appwrite-link'
+              rel='noreferrer'
+						>
+              <img
+                src='https://appwrite.io/images-ee/press/badge-gray-button.svg'
+                alt='Built with Appwrite'
+                height='36'
+                width='auto'
+							/>
+            </a>
+          </span>
         </h1>
       </footer>
     </div>

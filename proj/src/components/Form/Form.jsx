@@ -46,7 +46,6 @@ function Form () {
         images.forEach(image => {
           data.push([image.urls.small, image.links.html])
         })
-        console.log(data)
         setImg(data)
       })
     }
