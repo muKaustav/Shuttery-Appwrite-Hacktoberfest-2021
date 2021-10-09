@@ -7,7 +7,7 @@ function Form () {
   const [query, setQuery] = useState('')
   const [orientation, setOrientation] = useState('landscape')
   const [count, setCount] = useState('')
-  let [img, setImg] = useState([])
+  let [img, setImg] = useState([[]])
   let [idle, setIdle] = useState(true)
 
   let data = []
@@ -43,11 +43,10 @@ function Form () {
 				count +
 				'&client_id=zjZPpQjugZwWhIY5TF4CPeiVmL6T6HUg-11Ho6AfXGg'
       await fetch(url).then(response => response.json()).then(images => {
-        console.log(images)
         images.forEach(image => {
-          data.push(image.urls.small)
-					// image.links.html
+          data.push([image.urls.small, image.links.html])
         })
+        console.log(data)
         setImg(data)
       })
     }
@@ -99,7 +98,7 @@ function Form () {
       <div className='image-container'>
         {idle
 					? <img className='loader' src={loader} alt='loader' />
-					: <Image images={img} />}
+					: <Image data={img} />}
       </div>
     </div>
   )
