@@ -72,6 +72,14 @@ src
     │   └───Login.scss
     └───ProtectedRoute.jsx
 ```
+<br/>
+
+## 📷 | Screenshots
+
+<p align = center>
+    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/shuttery.jpg" target="_blank" />
+</p>
+
 
 <br/>
 
