@@ -43,6 +43,17 @@ sdk
 	.setProject("PROJECT ID"); // set your own project id
 ```
 
+Replace the redirect and failure routes for Google OAuth. <i>(<a href='https://appwrite.io/'>Article for reference</a>)</i>
+
+```js
+sdk.account.createOAuth2Session(
+        'google',
+        'http://localhost:3000/',
+        'http://localhost:3000/login',
+        ['profile']
+    )
+```
+
 <!-- <br> -->
 
 ```sh
@@ -72,6 +83,7 @@ src
     │   └───Login.scss
     └───ProtectedRoute.jsx
 ```
+
 <br/>
 
 ## 📷 | Screenshots
@@ -81,7 +93,6 @@ src
     <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/home.png" target="_blank" />
     <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/Appwrite-DemoApp-Hacktoberfest-2021/main/assets/result.png" target="_blank" />
 </p>
-
 
 <br/>
 
