@@ -34,7 +34,7 @@ npm install
 
 ## 📁 | Folder Structure
 
-Replace the <b>Endpoint and Project ID</b> in <i>src/Appwrite.js</i>.
+- Replace the <b>Endpoint and Project ID</b> in <i>src/Appwrite.js</i>.
 
 ```js
 const sdk = new Appwrite();
@@ -43,15 +43,15 @@ sdk
 	.setProject("PROJECT ID"); // set your own project id
 ```
 
-Replace the redirect and failure routes for Google OAuth. <i>(<a href='https://appwrite.io/'>Article for reference</a>)</i>
+- Replace the redirect and failure routes for Google OAuth. <i>(<a href='https://appwrite.io/'>Article for reference</a>)</i>
 
 ```js
 sdk.account.createOAuth2Session(
-        'google',
-        'http://localhost:3000/',
-        'http://localhost:3000/login',
-        ['profile']
-    )
+	"google",
+	"http://localhost:3000/",
+	"http://localhost:3000/login",
+	["profile"]
+);
 ```
 
 <!-- <br> -->
