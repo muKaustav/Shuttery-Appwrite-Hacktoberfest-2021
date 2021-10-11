@@ -15,7 +15,7 @@
 
 ## 🚀 | Usage
 
-- Appwrite Web: <a href='https://appwrite.io/'>Installation</a>, <a href='https://appwrite.io/docs'>Documentation</a> and <a href='https://30days.appwrite.io/'>Resources</a>.
+- Appwrite Web: <a target='_blank' href='https://appwrite.io/'>Installation</a>, <a target='_blank' href='https://appwrite.io/docs'>Documentation</a> and <a target='_blank' href='https://30days.appwrite.io/'>Resources</a>.
 - Clone this repository:<br>
 
 ```sh
@@ -43,7 +43,7 @@ sdk
 	.setProject("PROJECT ID"); // set your own project id
 ```
 
-- Replace the redirect and failure routes for Google OAuth. <i>(<a href='https://appwrite.io/'>Article for reference</a>)</i>
+- Replace the redirect and failure routes for Google OAuth in <i>src/Appwrite.js</i>. <i>(<a target='_blank' href='https://dev.to/appwrite/30daysofappwrite-oauth-providers-3jf6'>Article for reference</a>)</i>
 
 ```js
 sdk.account.createOAuth2Session(
