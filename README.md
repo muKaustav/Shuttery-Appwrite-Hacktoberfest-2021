@@ -6,7 +6,7 @@
 
 ## 📚 | Introduction
 
-- This web app gets beautiful pictures from <b>Unsplash</b> for all kinds of artistic needs.
+- This web app fetches and lets users download beautiful pictures from <b>Unsplash</b> to satisfy their artistic needs.
 - Current parameters: <b>Search, Orientation, Count (currently capped to 10)</b>.
 - This app demonstrates <i>Authentication</i> via <b>Google OAuth using an Appwrite backend</b>.
 - Shuttery is built with <b>React JS, Appwrite Web, and Unsplash API</b>.<br>
