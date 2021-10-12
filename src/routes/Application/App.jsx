@@ -7,7 +7,7 @@ import { RiLogoutBoxLine } from 'react-icons/ri'
 import './Application.scss'
 
 function App () {
-  let [name, setName] = useState()
+  let [name, setName] = useState('')
 
   let getUsername = async () => {
     let data = await api.getUser()
