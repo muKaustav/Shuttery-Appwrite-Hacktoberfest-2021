@@ -6,15 +6,11 @@ export const ProtectedRoute = ({ component: Component, ...rest }) => {
     <Route
       {...rest}
       render={props => {
-        if (localStorage.getItem('auth_state')) {
-          return <Component {...props} />
-        } else {
-          return (
-            <Redirect
-              to={{ pathname: '/login', state: { from: props.location } }}
+        return localStorage.getItem('auth_state')
+					? <Component {...props} />
+					: <Redirect
+  to={{ pathname: '/login', state: { from: props.location } }}
 						/>
-          )
-        }
       }}
 		/>
   )
