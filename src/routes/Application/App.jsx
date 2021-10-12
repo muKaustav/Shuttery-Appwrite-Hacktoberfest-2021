@@ -11,7 +11,7 @@ function App () {
 
   let getUsername = async () => {
     let data = await api.getUser()
-    setName(data['name'].split(' ')[0])
+    setName(data.name.split(' ')[0])
   }
 
   useEffect(() => {
@@ -31,10 +31,10 @@ function App () {
       <Navbar />
       <div className='Salutation'>
 				Hey {name}, get the best pictures from Unsplash!
-        <button onClick={logOut} className='Logout'>
-          <span className='logout-icon'>
-            <RiLogoutBoxLine />
-          </span>{' '}
+				<button onClick={logOut} className='Logout'>
+  <span className='logout-icon'>
+    <RiLogoutBoxLine />
+  </span>{' '}
 					Logout
 				</button>
       </div>
